@@ -7,7 +7,19 @@ public class BankAccount
 {
 	private String name;
 	private int accNum;
-	private double balance;
+	private double balance;public BankAccount(String n, int aN)
+	{
+		name = n;
+		accNum = aN;
+		balance = 0
+	}
+	public BnkAccount(String n, int aN, double ba1)
+	{
+		name = n;
+		accNum = aN;
+		balance = ba1
+	}
+	
 	
 	public BankAccount(double intBalance)
 	{

@@ -1,16 +1,39 @@
-
+/**
+ *
+ * @author Matthew To
+ *
+ */
 public class BankAccount 
 {
 	private String name;
 	private int accNum;
-	private double balance;
-	
-	public BankAccount()
+	private double balance;public BankAccount(String n, int aN)
 	{
-		name = "MatthewTo";
-		accNum = 1719;
-		balance = 0;
+		name = n;
+		accNum = aN;
+		balance = 0
 	}
+	public BnkAccount(String n, int aN, double ba1)
+	{
+		name = n;
+		accNum = aN;
+		balance = ba1
+	}
+	
+	
+	public BankAccount(double intBalance)
+	{
+		balance = intBalance;
+		intBalance = 0;
+	}
+	public BankAccount(int accountHolder)
+	{
+	  name = accountHolder;
+}
+    public BankAccount(int accountNumber)
+	{
+	  accNum = accountNumber;
+}
 	public void deposit(double depositAmount)
 	{
 		balance -= depositAmount;
