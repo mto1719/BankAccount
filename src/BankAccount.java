@@ -7,48 +7,45 @@ public class BankAccount
 {
 	private String name;
 	private int accNum;
-	private double balance;public BankAccount(String n, int aN)
+	private double balance;
+	
+	public BankAccount(String n, int aN)
 	{
 		name = n;
 		accNum = aN;
-		balance = 0
-	}
-	public BnkAccount(String n, int aN, double ba1)
-	{
-		name = n;
-		accNum = aN;
-		balance = ba1
+		balance = 0;
 	}
 	
+	public BankAccount(String n, int aN, double ba1)
+	{
+		name = n;
+		accNum = aN;
+		balance = ba1;
+	}
+	
+	public void withdraw(double amt)
+	{
+		balance -= amt;
+	}
+	
+	public void deposit(double amt)
+	{
+		balance += amt;
+	}
 	
 	public BankAccount(double intBalance)
 	{
 		balance = intBalance;
 		intBalance = 0;
 	}
-	public BankAccount(int accountHolder)
-	{
-	  name = accountHolder;
-}
-    public BankAccount(int accountNumber)
-	{
-	  accNum = accountNumber;
-}
-	public void deposit(double depositAmount)
-	{
-		balance -= depositAmount;
-	}
-	public void withdraw(double withdrawAmount)
-	{
-		balance += withdrawAmount;
-	}
+	
 	public double getBalance()
 	{
 		return balance;
 	}
 	public String toString()
 	{
-		String info = name + accNum + balance;
+		String info = "name: "+ name\n"accNum: "+ accNum\n"balance: "+balance;
 		return info;
 	}
 }
