@@ -10,7 +10,7 @@ public class TestClass
 		accounts.add(new CheckingAccount("Mrs. Ellis",30,1,10));
 		accounts.add(new SavingsAccount("Mr. Ellis", 500, .025, 200,5));
 		accounts.add(new SavingsAccount("Mrs. Ellis", .025, 200,5));
-	
+		
 		boolean correct = true;
 		
 		accounts.get(3).deposit(600);

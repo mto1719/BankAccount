@@ -60,7 +60,7 @@ public abstract class CheckingAccount extends BankAccount
 	{
 		if(GetName().equals(other.GetName()))
 		{
-			if(amt>balance) 
+			if(balance>0) 
 			{
 			GetName().withdraw(amt);
 			other.deposit(amt);

@@ -25,5 +25,29 @@ public class SavingsAccount extends BankAccount
 		MIN_BAL=mb;
 		MIN_BAL_FEE=mbf;
 	}
-	
+	public void withdraw(double amt)
+	{
+		if(balance==MIN_BAL)
+		{
+			balance-=MIN_BAL_FEE;
+		}
+		if(balance<0)
+		{
+			throw IllegalArgumentException;
+		}
+	}
+	public void transfer(BankAccount other, double amt)
+	{
+		
+	}
+	public static void addInterest()
+	{
+		double interest = 0;
+		interest=balance*intRate;
+		balance+=interest;
+	}
+	public endOfMonthUpdate
+	{
+		SavingsAccount.addInterest();
+	}
 }
